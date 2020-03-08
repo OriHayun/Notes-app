@@ -50,12 +50,12 @@ export default class App extends Component {
     });
   }
 
-  removeTodo =(item) =>{
+  removeTodo = (item) => {
     let todos = this.state.todos;
 
-    todos = todos.filter((todo) =>todo.id !== item.id)
+    todos = todos.filter((todo) => todo.id !== item.id)
 
-    this.setState({todos})
+    this.setState({ todos })
   }
 
   render() {
